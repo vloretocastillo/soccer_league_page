@@ -99,6 +99,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 10% 2%;
+    /* border: 1px solid red; */
 }
 
 .main-about h2{ 
@@ -554,8 +555,10 @@ a.footer-information { text-decoration: none; }
     top: 0;
     width: 100%;
     z-index: 2;
+    /* margin-bottom: 15%; */
 }
   
-.sticky + .content {
-    padding-top: 60px;
+.sticky + section[class^="main"] {
+    padding-top: 15%;
 }
+
