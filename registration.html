@@ -1,0 +1,290 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Northside Youth Soccer League</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Manjari:100,700&display=swap" rel="stylesheet">
+    
+ 
+  <link rel="stylesheet" href="css/styles2.css">
+
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="dark-cover"></div>
+        <div class="logo">
+            <a href="about.html" class="banner-title">
+                <img src="assets/nysl_logo.png" alt="Northside Youth Soccer League Logo">
+                <h1 class="title">Northside Youth <br/>Soccer League</h1>
+            </a>
+        </div>
+        
+        
+    </section>
+
+    <section class="menu" id="menu">
+        <ul>
+            <li>
+                <a href="about.html" >About </a>
+            </li>
+
+            <li>
+                <a href="events.html">Events</a>
+            </li>
+
+            <li>
+                <a href="policies.html" >Policies</a>
+            </li>
+
+            <li>
+                <a href="registration.html" id="current">Registration</a>
+            </li>
+
+            <li>
+                <a href="timetables.html" >Timetables</a>
+            </li>
+            
+        </ul>
+    </section>
+
+    
+
+    <section class="main-registration background-beige">
+
+        
+        
+        <form id="registration" action="show_data.html" method="GET" class="registration-form" onsubmit="return validateForm()">
+
+            <h2 class="timetables-title">Registration Form</h2>
+
+            <label class="form-titles"> Full Name</label> 
+            <div class="form-divider"></div>
+
+            <article class="form-section"> 
+                <div class="input-wrapper">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>   
+                
+                <div class="input-wrapper">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name">
+                </div>
+            </article>
+        
+
+            
+        
+
+        <label class="form-titles"> Address</label> 
+        <div class="form-divider"></div>
+
+        <article class="form-section"> 
+            <div class="input-wrapper">
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" >
+            </div>
+            <div class="input-wrapper">      
+                <label for="city">City:</label>
+                <input type="text" id="city"  name="city">
+            </div>
+            <div class="input-wrapper">      
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip"  name="zip">
+            </div>
+        </article>
+
+        <label class="form-titles"> Contact Details</label> 
+        <div class="form-divider"></div>
+
+        <article class="form-section">
+
+        <!-- <div> -->
+
+            <div class="input-wrapper">
+                <label for="parent">Parent/Guardian:</label>
+                <input type="text" id="parent" name="parent">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+        <!-- </div> -->
+
+        <!-- <div> -->
+
+            <div class="input-wrapper">
+                <label for="phone">Contact Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+        <!-- </div> -->
+
+        </article>
+
+        <label class="form-questions">Grade:</label>
+        <article class="form-section">
+            
+            <div class="radius-wrapper"><input type="radio" name="grade" value="preschool" id="preschool"> <br /><label for="preschool">Preschool</label></div>
+            <div class="radius-wrapper"><input type="radio" name="grade" value="1st" id="1st"> <br /><label for="1st">1st</label></div>
+            <div class="radius-wrapper"><input type="radio" name="grade" value="2nd" id="2nd"> <br /><label for="2nd">2nd</label></div>
+            <div class="radius-wrapper"><input type="radio" name="grade" value="3rd" id="3rd"> <br /><label for="3rd">3rd</label></div>
+            <div class="radius-wrapper"><input type="radio" name="grade" value="4th" id="4th"> <br /><label for="4th">4th</label></div>
+            <div class="radius-wrapper"><input type="radio" name="grade" value="5th" id="5th"> <br /> <label for="5th">5th</label></div>
+        </article>
+
+        
+
+        <!-- <div class="form-divider"></div> -->
+
+        
+        <label class="form-questions">Which elementary schools do you live near?</label>
+        
+        <article class="form-section">
+            
+            <div class="border-red">
+                <label class="strong form-questions-margin-bottom">First closest school: </label>
+                <div><input type="radio" name="firstschool" value="Katzenmaier" id="Katzenmaier1"> <label for="Katzenmaier1">AJ Katzenmaier</label></div>
+                <div><input type="radio" name="firstschool" value="Greenbay" id="Greenbay1"> <label for="Greenbay1">Greenbay</label></div>
+                <div><input type="radio" name="firstschool" value="Howard" id="Howard1"> <label for="Howard1">Howard A Yeager</label></div>
+                <div><input type="radio" name="firstschool" value="Marjorie" id="Marjorie1"> <label for="Marjorie1">Marjorie P Har</label></div>
+                <div><input type="radio" name="firstschool" value="North" id="North1"> <label for="North1">North Elementary</label></div>
+                <div><input type="radio" name="firstschool" value="South" id="South1"> <label for="South1">South Elementary</label></div>
+        
+            </div>
+
+            <div class="border-red">
+                <label class="strong form-questions-margin-bottom">Second closest school: </label>
+                <div><input type="radio" name="secondschool" value="Katzenmaier" id="Katzenmaier2"> <label for="Katzenmaier2">AJ Katzenmaier</label></div>
+                <div><input type="radio" name="secondschool" value="Greenbay" id="Greenbay2"> <label for="Greenbay2">Greenbay</label></div>
+                <div><input type="radio" name="secondschool" value="Howard" id="Howard2"> <label for="Howard2">Howard A Yeager</label></div>
+                <div><input type="radio" name="secondschool" value="Marjorie" id="Marjorie2"> <label for="Marjorie2">Marjorie P Har</label></div>
+                <div><input type="radio" name="secondschool" value="North" id="North2"> <label for="North2">North Elementary</label></div>
+                <div><input type="radio" name="secondschool" value="South" id="South2"> <label for="South2">South Elementary</label></div>
+            </div>
+        </article>
+
+        <!-- <div class="form-divider"></div> -->
+
+        <label class="form-questions"> What position(s) do you normally play? (check all that apply)</label>
+
+        <article class="form-section ">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="positions_played" value="forward" id="forward1"> <label for="forward1">Forward</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="positions_played" value="defense" id="defense1"> <label for="defense1">Defense</label>
+            </div>
+            <div class="checkbox-wrapper">   
+                <input type="checkbox" name="positions_played" value="midfield" id="midfield1"> <label for="midfield1">Midfield</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="positions_played" value="goalkeeper" id="goalkeeper1"> <label for="goalkeeper1">Goalkeeper</label>
+            </div>
+        </article>
+
+
+
+        <label class="form-questions ">What position(s) would you like to play? (check all that apply)</label>
+        <article class="form-section ">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="positions_wanted" value="forward" id="forward2"> <label for="forward2">Forward</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="positions_wanted" value="defense" id="defense2"> <label for="defense2">Defense</label>
+            </div>
+            <div class="checkbox-wrapper">   
+                <input type="checkbox" name="positions_wanted" value="midfield" id="midfield2"> <label for="midfield2">Midfield</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="positions_wanted" value="goalkeeper" id="goalkeeper2"> <label for="goalkeeper2">Goalkeeper</label>
+            </div>
+        </article>
+
+        <!-- <div class="form-divider"></div> -->
+
+        <label class="form-questions ">Jersey Size:</label>
+
+        <article class="form-section ">
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="youth-small" id="youth-small1"><br /> <label for="youth-small1">Youth Small</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="youth-medium" id="youth-medium1"> <br /> <label for="youth-medium1">Youth Medium</label>
+            </div>
+            <div class="radius-wrapper">   
+                <input type="radio" name="jersey" value="youth-large" id="youth-large1"><br />  <label for="youth-large1">Youth Large</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="small" id="small1"><br />  <label for="small1">Small</label>
+            </div>
+
+            <div class="radius-wrapper"> 
+                <input type="radio" name="jersey" value="medium" id="medium1"> <br /> <label for="medium1">Medium</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="large" id="large1"><br />  <label for="large1">Large</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="extra-large" id="extra-large1"><br />  <label for="extra-large1">Extra Large</label>
+            </div>
+        </article>
+
+        <label class="form-questions">Shorts Size:</label>
+        <article class="form-section ">
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="youth-small" id="youth-small2"> <br /> <label for="youth-small2">Youth Small</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="youth-medium" id="youth-medium2"> <br /> <label for="youth-medium2">Youth Medium</label>
+            </div>
+            <div class="radius-wrapper">   
+                <input type="radio" name="jersey" value="youth-large" id="youth-large2"> <br /> <label for="youth-large2">Youth Large</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="small" id="small2"><br />  <label for="small2">Small</label>
+            </div>
+
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="medium" id="medium2"> <br /> <label for="medium2">Medium</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="large" id="large2"><br />  <label for="large2">Large</label>
+            </div>
+            <div class="radius-wrapper">
+                <input type="radio" name="jersey" value="extra-large" id="extra-large2"> <br /><label for="extra-large2">Extra Large</label>
+            </div>
+        </article>
+
+        <hr>
+
+        <input type="submit" value="Submit" class="form-btn-submit" id="margin-top-submit-btn">
+        </form>
+        
+    </section>
+    
+    <footer>
+            <ion-icon name="mail" class="icon"></ion-icon><a class="footer-information" href="mailto:youremailaddress">nysl@chisoccer.org</a><br />
+            <ion-icon name="home" class="icon"></ion-icon><span class="footer-information">18 Breckan Road, Brunswick, ME 04011</span><br />
+            <ion-icon name="call" class="icon"></ion-icon><span class="footer-information">+1 207 837 2620</span><br />
+    </footer>
+
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>  
+    <script src="js/scripts.js"></script>
+</body>
+</html>

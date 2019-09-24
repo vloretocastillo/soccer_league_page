@@ -1,0 +1,102 @@
+.header {
+    /* border: 1px solid blue; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    /* border: 1px solid blue;      */
+    text-align: center;
+    width: 30%;
+    padding-top: 1%;
+}
+
+.banner {
+    /* border: 1px solid pink; */
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.banner .title {
+    font-size: 2.2rem;
+    margin-top: 7%;
+}
+
+.menu {
+    padding-top: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    /* border: 1px solid pink; */
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.logo img {
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.main {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.side-image {
+    /* border: 1px solid blue; */
+    text-align: center;
+    width: 30%;
+    padding-top: 1%;
+}
+
+.side-image img {
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 280px;
+}
+
+.info {
+    /* border: 1px solid pink; */
+    padding-left: 50px;
+    width: 70%
+}
+
+.info p {
+    /* width: 90%; */
+    width: 90%;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1.7rem;
+    margin-left: 1.2rem;
+}
+
+
+ul.events-list {
+    /* border: 1px solid pink; */
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 1.2rem;
+}
+
+.events-list li span {
+    /* border: 1px solid black; */
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.events-list li p {
+    /* border: 1px solid green; */
+    
+}
