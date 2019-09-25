@@ -224,6 +224,19 @@
     color: white;
     border-radius: 5px;
     font-size: 1.2rem;
+
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
+
+.back-top-btn ion-icon {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.hide-me{
+    display: none;
 }
 
 .back-top-btn:hover {
@@ -560,5 +573,14 @@ a.footer-information { text-decoration: none; }
   
 .sticky + section[class^="main"] {
     padding-top: 15%;
+}
+
+
+/***************************************************** FUNNY BUTTON */
+
+.fix-me {
+    position: fixed;
+    bottom: 30vh;
+    right: 5%;
 }
 
